@@ -110,30 +110,6 @@ sum(profit) as total_profit, sum(quantity) as total_quantity
 from combined_order
 group by month_of_year
 
-/* 
-The 3 steps below is combined as one step below.
-create view order_details_by_total as 
-select category, sub_category,
-sum(quantity) as total_order_quantity,
-sum(profit) as total_profit,
-sum(amount) as total_amount
-from order_details
-group by sub_category
-order by total_order_quantity desc
-
-create view order_details_by_unit as
-select category, sub_category, max(cost_per_unit) as max_cost, max(price_per_unit) as max_price
-from(select *, round((amount-profit)/quantity, 2) as cost_per_unit, round(amount/quantity,2) as price_per_unit
-from order_details) as c
-group by sub_category
-order by max_cost desc
-
-select t.total_order_quantity,t.total_profit,t.total_amount,u.max_cost,u.max_price
-from order_details_by_total as t
-join order_details_by_unit as u
-on t.sub_category = u.sub_category;
-*/
-
 /*Find the total sales, total profit, and total quantity sold for each category and sub-category. 
 Return the maximum cost and maximum price for each sub-category too.*/
 create view Final_order_details as
