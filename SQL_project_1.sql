@@ -46,7 +46,6 @@ from combined_order
 group by customerName) RFM_table	
 group by customerName
 
-image copy 2.png
 
 -- Qn: Show the number and percentage for each customer segment as the final result. Order the results by the percentage of customers.
 -- return the number and percentage of each customer segment
