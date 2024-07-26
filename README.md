@@ -43,18 +43,20 @@ This provides a clear picture of the geographical spread and the scale of operat
 
 New Customer Analysis (2019):
 
-![image](https://github.com/user-attachments/assets/d7397dc3-c387-4a6b-ac23-8f69ee2b397d)
-
 Identified new customers who made their first purchase in 2019.
 Highlighted the top 5 new customers based on their spending, along with their cities and states.
 This helps in recognizing new market opportunities and regions where new customer acquisition is strong.
-Top Profitable States & Cities:
 
-![image](https://github.com/user-attachments/assets/7ab13dc9-7724-4e40-a65e-206b3a5d5dda)
+![image](https://github.com/user-attachments/assets/d7397dc3-c387-4a6b-ac23-8f69ee2b397d)
+
+Top Profitable States & Cities:
 
 The top 10 states and cities were identified based on profitability.
 For each of these locations, the number of customers, quantity sold, and total profit were calculated.
 These insights are crucial for strategic planning, enabling the business to focus on expanding in the most profitable areas.
+
+![image](https://github.com/user-attachments/assets/7ab13dc9-7724-4e40-a65e-206b3a5d5dda)
+
 First Order in Each State:
 
 ![image](https://github.com/user-attachments/assets/d1beffab-d476-4e1b-85dd-ee119ac54df5)
