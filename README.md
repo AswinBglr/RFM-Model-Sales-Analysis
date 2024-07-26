@@ -20,7 +20,7 @@ drive strategic decisions
 
 Insights and Conclusions:
 Customer Segmentation Analysis:
-
+![image](https://github.com/user-attachments/assets/d5b60bff-c2ae-4e2c-892e-7abbdb76b31b)
 By combining order details and order list data, a comprehensive view of each customer's transactions was created.
 Customers were segmented using the RFM (Recency, Frequency, Monetary) model, enabling the classification into groups such as "Champions," "Loyal Customers," and "At Risk."
 The majority of customers fell into segments with lower engagement levels, indicating potential areas for targeted marketing and retention efforts.
