@@ -18,6 +18,7 @@ Identify new customer trends and profitable markets.
 Generated actionable insights on customer behavior, regional and temporal sales dynamics, and emerging trends to 
 drive strategic decisions
 
+
 Insights and Conclusions:
 
 Customer Segmentation Analysis:
@@ -59,22 +60,26 @@ These insights are crucial for strategic planning, enabling the business to focu
 
 First Order in Each State:
 
+Extracted details of the first order in each state, providing insights into the initial market penetration and customer base expansion timeline.
+
 ![image](https://github.com/user-attachments/assets/d1beffab-d476-4e1b-85dd-ee119ac54df5)
 
-Extracted details of the first order in each state, providing insights into the initial market penetration and customer base expansion timeline.
 Monthly Profitability and Quantity Sold:
-
-![image](https://github.com/user-attachments/assets/bb1c6811-b793-4a17-9642-64691f67b6a4)
 
 Monthly trends in profitability and quantity sold were analyzed.
 This helps in identifying seasonal patterns and periods of high or low sales, which can inform inventory management and marketing strategies.
-Category and Sub-Category Analysis:
 
-![image](https://github.com/user-attachments/assets/241281d8-da25-4042-90a4-ca27f590fd51)
+![image](https://github.com/user-attachments/assets/bb1c6811-b793-4a17-9642-64691f67b6a4)
+
+Category and Sub-Category Analysis:
 
 Calculated total sales, profit, and quantity sold for each category and sub-category.
 Identified the maximum cost and price per unit for each sub-category.
 This detailed breakdown aids in understanding which product lines are most profitable and where cost optimizations can be made.
+
+![image](https://github.com/user-attachments/assets/241281d8-da25-4042-90a4-ca27f590fd51)
+
+
 Strategic Recommendations:
 Focus on Customer Retention:
 
