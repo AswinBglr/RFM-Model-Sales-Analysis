@@ -19,7 +19,7 @@ Generated actionable insights on customer behavior, regional and temporal sales 
 drive strategic decisions
 
 
-Insights and Conclusions:
+**Insights and Conclusions:**
 
 Customer Segmentation Analysis:
 
