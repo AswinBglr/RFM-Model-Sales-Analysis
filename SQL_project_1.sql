@@ -1,7 +1,7 @@
 use ecommerce
 select * from order_details
 
---renaming the column_names
+-- renaming the column_names
 alter table order_details change 'Sub-Category' sub_category varchar(25);
 ALTER TABLE order_details CHANGE COLUMN `Sub-Category` sub_category VARCHAR(25);
 ALTER TABLE order_details CHANGE COLUMN `Order ID` order_id  VARCHAR(25);
@@ -46,8 +46,6 @@ from combined_order
 group by customerName) RFM_table	
 group by customerName
 
-
--- Qn: Show the number and percentage for each customer segment as the final result. Order the results by the percentage of customers.
 -- return the number and percentage of each customer segment
 create view customer_segment as
 select customer_segment, 
@@ -57,7 +55,6 @@ from customer_groupings
 group by customer_segment
 order by per_of_customers desc;
 
--- Qn2: Find the number of orders, customers, cities, and states.
 -- Number of orders, customers, cities and states
 select count(distinct order_id) as num_of_orders,
 count(distinct customername) as num_of_customers,
@@ -65,11 +62,7 @@ count(distinct city) as num_of_cities,
 count(distinct state) as num_of_states
 from combined_order
 
-/* Qn3:Find the new customers who made purchases in the year 2019. 
-Only shows the top 5 new customers and their respective cities and states.
-Order the result by the amount they spent.
-*/
- -- Top 5 new customers
+ -- Top 5 new customers who made purchases in the year 2019. 
 SELECT CustomerName, state, city, sum(amount) as sales
 from combined_order
 where CustomerName not in (
@@ -81,10 +74,7 @@ group by CustomerName, state, city
 order by sales desc
 limit 5;
 
- /*Find the top 10 profitable states & cities so that the company can expand its business.
- Determine the number of products sold and the number of customers in these top 10 profitable states & cities.
-*/
--- number of customers, quantity sold, profit made as per states and city
+-- Number of products sold and the number of customers in the top 10 profitable states & cities so that the company can expand its business.
 select state, city, count(distinct customername) as num_of_customers,
 sum(profit) as total_profit,
 sum(quantity) as total_quantity
@@ -93,11 +83,7 @@ group by state, city
 order by total_profit desc
 limit 10;
 
-/*
-Display the details (in terms of “order_date”, “order_id”, “State”, and “CustomerName”) for the first order in each state. 
-Order the result by “order_id”.
-*/
--- first order in each state
+-- The details (in terms of “order_date”, “order_id”, “State”, and “CustomerName”) for the first order in each state.
 select order_date, order_id, state, customername
 from( select *, row_number() over (partition by state order by state, order_id)
 as row_num_per_state
@@ -105,14 +91,14 @@ from combined_order)as  firstorder
 where row_num_per_state =1
 order by order_id;
 
--- Check the monthly profitability and monthly quantity sold to see if there are patterns in the dataset.
+-- Checking the monthly profitability and monthly quantity sold to see if there are patterns in the dataset.
 select concat (monthname(str_to_date(order_Date,'%d-%m-%Y')),"-", year(str_to_date(order_date,'%d-%m-%Y'))) as month_of_year,
 sum(profit) as total_profit, sum(quantity) as total_quantity
 from combined_order
 group by month_of_year
 
-/*Find the total sales, total profit, and total quantity sold for each category and sub-category. 
-Return the maximum cost and maximum price for each sub-category too.*/
+-- The total sales, total profit, and total quantity sold for each category and sub-category. 
+-- Return the maximum cost and maximum price for each sub-category too.
 create view Final_order_details as
 select 
 t.category,
