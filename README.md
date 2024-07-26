@@ -17,3 +17,5 @@ Identify new customer trends and profitable markets.
 
 Generated actionable insights on customer behavior, regional and temporal sales dynamics, and emerging trends to 
 drive strategic decisions
+
+https://github.com/AswinBglr/SQL-Project/issues/1#issue-2432788154
