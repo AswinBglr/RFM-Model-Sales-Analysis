@@ -18,4 +18,60 @@ Identify new customer trends and profitable markets.
 Generated actionable insights on customer behavior, regional and temporal sales dynamics, and emerging trends to 
 drive strategic decisions
 
-https://github.com/AswinBglr/SQL-Project/issues/1#issue-2432788154
+Insights and Conclusions:
+Customer Segmentation Analysis:
+
+By combining order details and order list data, a comprehensive view of each customer's transactions was created.
+Customers were segmented using the RFM (Recency, Frequency, Monetary) model, enabling the classification into groups such as "Champions," "Loyal Customers," and "At Risk."
+The majority of customers fell into segments with lower engagement levels, indicating potential areas for targeted marketing and retention efforts.
+Customer Segment Distribution:
+
+A view was created to show the number and percentage of customers in each segment, ordered by the percentage of customers.
+This distribution helps in understanding the customer base composition and prioritizing engagement strategies for different segments.
+Order and Customer Analysis:
+
+The total number of orders, unique customers, cities, and states were identified.
+This provides a clear picture of the geographical spread and the scale of operations.
+New Customer Analysis (2019):
+
+Identified new customers who made their first purchase in 2019.
+Highlighted the top 5 new customers based on their spending, along with their cities and states.
+This helps in recognizing new market opportunities and regions where new customer acquisition is strong.
+Top Profitable States & Cities:
+
+The top 10 states and cities were identified based on profitability.
+For each of these locations, the number of customers, quantity sold, and total profit were calculated.
+These insights are crucial for strategic planning, enabling the business to focus on expanding in the most profitable areas.
+First Order in Each State:
+
+Extracted details of the first order in each state, providing insights into the initial market penetration and customer base expansion timeline.
+Monthly Profitability and Quantity Sold:
+
+Monthly trends in profitability and quantity sold were analyzed.
+This helps in identifying seasonal patterns and periods of high or low sales, which can inform inventory management and marketing strategies.
+Category and Sub-Category Analysis:
+
+Calculated total sales, profit, and quantity sold for each category and sub-category.
+Identified the maximum cost and price per unit for each sub-category.
+This detailed breakdown aids in understanding which product lines are most profitable and where cost optimizations can be made.
+Strategic Recommendations:
+Focus on Customer Retention:
+
+Target segments like "Loyal Customers" and "At Risk" with personalized marketing and retention strategies to enhance engagement and reduce churn.
+Implement loyalty programs for "Champions" to maintain their high level of satisfaction and advocacy.
+Expand in Profitable Regions:
+
+Leverage the insights on top profitable states and cities to prioritize business expansion efforts in these areas.
+Tailor marketing campaigns and promotions to resonate with customers in these high-profit regions.
+Optimize Inventory and Sales Strategies:
+
+Use the monthly profitability and quantity sold data to optimize inventory levels, ensuring high-demand products are adequately stocked during peak seasons.
+Adjust pricing strategies based on cost and price insights for each sub-category to maximize profit margins.
+Enhance Reporting and Dashboard Capabilities:
+
+Continue developing and refining Power BI dashboards to provide real-time insights and facilitate data-driven decision-making.
+Streamline existing reports and automate wherever possible to increase efficiency and reduce manual efforts.
+Invest in Data-Driven HR Strategies:
+
+Utilize the machine learning model insights on employee attrition to improve workforce planning and retention initiatives.
+Collaborate closely with HR and IT teams to enhance data integration and reporting capabilities, driving more informed HR decisions.
